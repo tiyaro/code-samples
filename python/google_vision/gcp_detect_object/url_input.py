@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Sample code to run object detection with image url as input
+Sample code to run gcp object detection with image url as input
 """
 
 import requests
@@ -17,7 +17,7 @@ def infer():
         sys.exit(1)
 
     # API endpoint
-    url = "https://api.tiyaro.ai/v1/ent/torchserve/1/maskrcnn_resnet50_fpn"
+    url = "https://api.tiyaro.ai/v1/ent/gcp/1/gcp_detect_object"
 
     # Input image
     imgURL = "https://public-model-demo.s3.us-west-2.amazonaws.com/object-detect-1.jpg"

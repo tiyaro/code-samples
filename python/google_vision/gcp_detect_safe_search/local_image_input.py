@@ -1,12 +1,19 @@
 #!/usr/bin/env python
 
 """
-Sample code to run object detection with image url as input
+Sample code to run safe search detection with local image as input
 """
 
 import requests
 import os
 import sys
+import base64
+
+
+def imageToBase64(srcPath):
+    with open(srcPath, 'rb') as image:
+        b64Img = base64.b64encode(image.read()).decode('utf-8')
+    return b64Img
 
 
 def infer():
@@ -17,12 +24,13 @@ def infer():
         sys.exit(1)
 
     # API endpoint
-    url = "https://api.tiyaro.ai/v1/ent/torchserve/1/maskrcnn_resnet50_fpn"
+    url = "https://api.tiyaro.ai/v1/ent/gcp/1/gcp_detect_safe_search"
 
-    # Input image
-    imgURL = "https://public-model-demo.s3.us-west-2.amazonaws.com/object-detect-1.jpg"
+    # Convert binary image to base64
+    imgPath = "../../../testdata/marathon.jpg"
+    b64Img = imageToBase64(imgPath)
 
-    payload = {"imageRef": {"URL": imgURL}}
+    payload = {"imageRef": {"Bytes": b64Img}}
     headers = {
         "accept": "*/*",
         "content-type": "application/json",

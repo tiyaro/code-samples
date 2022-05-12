@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Sample code to run image classification with local image as input
+Sample code to run object detection with local image as input
 """
 
 import requests
