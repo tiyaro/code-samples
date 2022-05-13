@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Sample code to run gcp detect lanmarks with local image as input
+Sample code to run gcp detect landmarks with local image as input
 """
 
 import requests
