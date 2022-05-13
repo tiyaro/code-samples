@@ -1,4 +1,4 @@
-package ai.tiyaro.samples.image_object_detection;
+package ai.tiyaro.samples.gcp_classes.gcp_detect_document;
 
 import org.apache.commons.io.FileUtils;
 import org.json.JSONObject;
@@ -12,7 +12,7 @@ import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Base64;
 import java.util.Collections;
 
-/** Sample code to run image object detection with local image as input */
+/** Sample code to run image classification with local image as input */
 public class LocalImageInput {
 
   public String imageToBase64(String filePath) throws Exception {
@@ -30,9 +30,9 @@ public class LocalImageInput {
           "Please set TIYARO_API_KEY environment variable. You can generate your API key from here - https://console.tiyaro.ai/apikeys");
     }
     // API endpoint
-    var url = "https://api.tiyaro.ai/v1/ent/torchserve/1/maskrcnn_resnet50_fpn";
+    var url = "https://api.tiyaro.ai/v1/ent/gcp/1/gcp_detect_document";
     // Convert binary image to base64
-    var imgPath = "testdata/object-detect-1.jpg";
+    var imgPath = "testdata/ford_slogan.jpg";
     var b64Img = imageToBase64(imgPath);
     var client = HttpClient.newHttpClient();
 
