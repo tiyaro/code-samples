@@ -1,0 +1,1 @@
+# Sample code to run Google Detect Web Geo on Tiyaro

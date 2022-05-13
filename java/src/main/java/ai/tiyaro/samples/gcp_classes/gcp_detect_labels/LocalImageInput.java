@@ -12,7 +12,7 @@ import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Base64;
 import java.util.Collections;
 
-/** Sample code to run gcp detect labels (image classification) with local image as input */
+// Sample code to run gcp detect labels (image classification) with local image as input
 public class LocalImageInput {
 
   public String imageToBase64(String filePath) throws Exception {

@@ -8,7 +8,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse.BodyHandlers;
 
-/** Sample code to run NLP fill-mask */
+// Sample code to run NLP fill-mask
 public class NLP {
 
   public void infer() throws Exception {

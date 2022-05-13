@@ -9,7 +9,7 @@ import java.util.Collections;
 
 import org.json.JSONObject;
 
-/** Sample code to run image classification with image url as input */
+// Sample code to run image classification with image url as input
 public class URLInput {
 
   public void infer() throws Exception {

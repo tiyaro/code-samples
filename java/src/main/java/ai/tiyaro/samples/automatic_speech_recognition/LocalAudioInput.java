@@ -11,7 +11,7 @@ import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Base64;
 
-/** Sample code to run speech recognition on a local audio file */
+// Sample code to run speech recognition on a local audio file
 public class LocalAudioInput {
 
   public String audioToBase64(String filePath) throws Exception {

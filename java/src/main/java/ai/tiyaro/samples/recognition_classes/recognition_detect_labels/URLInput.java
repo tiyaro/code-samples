@@ -9,7 +9,7 @@ import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Collections;
 
-/** Sample code to run rekognition detect labels (image classification) api with image url as input*/
+// Sample code to run rekognition detect labels (image classification) api with image url as input
 public class URLInput {
 
   public void infer() throws Exception {

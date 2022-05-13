@@ -1,0 +1,1 @@
+# Sample code to run Google Color Detection (gcp_detect_properties) on Tiyaro

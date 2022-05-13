@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.json.JSONObject;
 
-/** Sample code to run NLP Zero shot classification */
+// Sample code to run NLP Zero shot classification
 public class NLP {
 
   public void infer() throws Exception {

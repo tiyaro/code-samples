@@ -7,12 +7,11 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Base64;
-import java.util.Collections;
 
 import org.apache.commons.io.FileUtils;
 import org.json.JSONObject;
 
-/** Sample code to run audio classification on a local audio file*/
+// Sample code to run audio classification on a local audio file
 public class LocalAudioInput {
 
   public String audioToBase64(String filePath) throws Exception {

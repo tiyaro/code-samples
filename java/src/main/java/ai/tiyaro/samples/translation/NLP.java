@@ -8,7 +8,7 @@ import java.net.http.HttpResponse.BodyHandlers;
 
 import org.json.JSONObject;
 
-/** Sample code to run NLP Translation */
+// Sample code to run NLP Translation
 public class NLP {
 
   public void infer() throws Exception {

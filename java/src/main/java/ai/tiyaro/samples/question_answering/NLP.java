@@ -8,7 +8,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse.BodyHandlers;
 
-/** Sample code to run NLP Question Answering */
+// Sample code to run NLP Question Answering
 public class NLP {
 
   public void infer() throws Exception {

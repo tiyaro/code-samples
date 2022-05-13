@@ -1,0 +1,1 @@
+# Sample code to run Google Object Detection (gcp_detect_object) on Tiyaro

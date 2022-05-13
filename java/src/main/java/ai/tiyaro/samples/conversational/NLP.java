@@ -9,7 +9,7 @@ import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
 
-/** Sample code to try NLP Conversational API */
+// Sample code to try NLP Conversational API
 public class NLP {
 
   public void infer() throws Exception {
