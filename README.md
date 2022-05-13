@@ -32,17 +32,17 @@ And here is where to find the type (image-classification) of the model
 ## Finding the sample for your model
 You can search for models in the Tiyaro console using the model explorer. After you find the model of your choice, you can locate the 'model type' of that models as shown above. This repo is organized by 'model types'. So once you have your model type you navigate to the right subdir of the langauage of your choice to find the sample that you can adapt for your use. 
 
-For example, the python sample that you can adapt for **mobilenet_v3_large** model is in [python/image-classification](python/image-classification)
+For example, the python sample that you can adapt for **mobilenet_v3_large** model is in [python/image-classification](python/image-classification) and java sample is in [java/image-classification](java/src/main/java/ai/tiyaro/samples/image_classification).
 
-Similarly, the python sample that you can adapt for **gpt2** which is of model type **text-generation** is in [python/text-generation](python/text-generation)
+Similarly, the python sample that you can adapt for **gpt2** which is of model type **text-generation** is in [python/text-generation](python/text-generation) and java sample is in [java/text-generation](java/src/main/java/ai/tiyaro/samples/test_generation).
 
 
 ## Inputs for the API
 Where applicable an API can accept input data in multiple formats. For instance all vision APIs can accept either a image URL or the image in base64 format. For such APIs you will find separated samples for each type of input. The code to convert an image or audio file into base64 format is included in the samples.
 
-For example, the python sample for using a local image and coverting it into a base64 image for image-classification is in [python/image-classification/local_image_input.py](python/image-classification/local_image_input.py)
+For example, the python sample for using a local image and coverting it into a base64 image for image-classification is in [python/image-classification/local_image_input.py](python/image-classification/local_image_input.py) and java sample is in [java/image-classification/LocalImageInput.java](java/src/main/java/ai/tiyaro/samples/image_classification/LocalImageInput.java).
 
-Similarly the sample for using an image URL is in [python/image-classification/url_input.py](python/image-classification/url_input.py)
+Similarly the sample for using an image URL is in [python/image-classification/url_input.py](python/image-classification/url_input.py) and java sample is in [java/image-classification/URLInput.java](java/src/main/java/ai/tiyaro/samples/image_classification/URLInput.java).
 
 ## gcp and rekognition classes
 gcp and rekognition classes are organized under [python/gcp_classes](python/gcp_classes) and [python/rekognition_classes](python/rekognition_classes) accordingly.
