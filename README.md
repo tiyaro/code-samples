@@ -44,5 +44,5 @@ For example, the python sample for using a local image and coverting it into a b
 
 Similarly the sample for using an image URL is in [python/image-classification/url_input.py](python/image-classification/url_input.py)
 
-
-
+## gcp and rekognition classes
+gcp and rekognition classes are organized under [python/gcp_classes](python/gcp_classes) and [python/rekognition_classes](python/rekognition_classes) accordingly.
