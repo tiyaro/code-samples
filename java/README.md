@@ -16,8 +16,8 @@ Please set TIYARO_API_KEY environment variable. You can generate your API key fr
 When running from IDE, make sure to restart after you set the environment variable in your shell's profile.
 
 ## Build
-Import it as maven project.
+From your IDE, import [pom.xml](pom.xml) as maven project.
 ```
 mvn install
 ```
-And open any [package](./src/main/java/ai/tiyaro/samples/) and run class to see output.
+Then, open any [package](./src/main/java/ai/tiyaro/samples/) and run classes to see outputs.
