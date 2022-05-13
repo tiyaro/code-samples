@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Sample code to run speech recogntion on a local audio file
+Sample code to run speech recognition on a local audio file
 """
 
 import requests
