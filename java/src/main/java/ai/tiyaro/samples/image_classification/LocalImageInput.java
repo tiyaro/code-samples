@@ -16,7 +16,7 @@ import org.json.JSONObject;
 public class LocalImageInput {
 
   public String imageToBase64(String filePath) throws Exception {
-    File file = new File(ClassLoader.getSystemResource(filePath).toURI());
+    File file = new File(LocalImageInput.class.getClassLoader().getResource(filePath).toURI());
     var fileContent = FileUtils.readFileToByteArray(file);
     String encodedBytesString = Base64.getEncoder().encodeToString(fileContent);
     return encodedBytesString;

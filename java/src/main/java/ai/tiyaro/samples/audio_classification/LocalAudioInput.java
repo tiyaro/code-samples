@@ -15,7 +15,7 @@ import org.json.JSONObject;
 public class LocalAudioInput {
 
   public String audioToBase64(String filePath) throws Exception {
-    File file = new File(ClassLoader.getSystemResource(filePath).toURI());
+    File file = new File(LocalAudioInput.class.getClassLoader().getResource(filePath).toURI());
     var fileContent = FileUtils.readFileToByteArray(file);
     String encodedBytesString = Base64.getEncoder().encodeToString(fileContent);
     return encodedBytesString;
