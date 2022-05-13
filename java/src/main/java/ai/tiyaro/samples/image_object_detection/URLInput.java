@@ -1,4 +1,6 @@
-package ai.tiyaro.samples.image_classification;
+package ai.tiyaro.samples.image_object_detection;
+
+import org.json.JSONObject;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -7,9 +9,7 @@ import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Collections;
 
-import org.json.JSONObject;
-
-/** Sample code to run image classification with image url as input */
+/** Sample code to run image object detection with image url as input */
 public class URLInput {
 
   public void infer() throws Exception {
@@ -20,7 +20,7 @@ public class URLInput {
           "Please set TIYARO_API_KEY environment variable. You can generate your API key from here - https://console.tiyaro.ai/apikeys");
     }
     // API endpoint
-    var url = "https://api.tiyaro.ai/v1/ent/google/5/imagenet/resnet_v1_101/classification";
+    var url = "https://api.tiyaro.ai/v1/ent/torchserve/1/maskrcnn_resnet50_fpn";
     // Input image
     var imgURL = "https://public-model-demo.s3.us-west-2.amazonaws.com/object-detect-1.jpg";
 

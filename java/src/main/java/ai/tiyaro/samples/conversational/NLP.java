@@ -1,16 +1,16 @@
-package ai.tiyaro.samples.image_classification;
+package ai.tiyaro.samples.conversational;
+
+import org.json.JSONObject;
 
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse.BodyHandlers;
-import java.util.Collections;
+import java.util.List;
 
-import org.json.JSONObject;
-
-/** Sample code to run image classification with image url as input */
-public class URLInput {
+/** Sample code to try NLP Conversational API */
+public class NLP {
 
   public void infer() throws Exception {
     // Get the API key for invoking Tiyaro API
@@ -20,14 +20,20 @@ public class URLInput {
           "Please set TIYARO_API_KEY environment variable. You can generate your API key from here - https://console.tiyaro.ai/apikeys");
     }
     // API endpoint
-    var url = "https://api.tiyaro.ai/v1/ent/google/5/imagenet/resnet_v1_101/classification";
-    // Input image
-    var imgURL = "https://public-model-demo.s3.us-west-2.amazonaws.com/object-detect-1.jpg";
+    var url = "https://api.tiyaro.ai/v1/ent/huggingface/1/microsoft/DialoGPT-small";
+    // Input
+    var oldInputs = List.of("Can I use this filter in Australian 220V power?");
+    var oldOutputs = List.of("No it is a 110 unit you would have to purchase a 110 converter elseware to use this");
+
+    var input = "Where can I buy this converter and is it safe to use it with this filter?";
+
 
     var client = HttpClient.newHttpClient();
 
     var payload = new JSONObject();
-    payload.put("imageRef", Collections.singletonMap("URL", imgURL));
+    payload.put("oldInputs", oldInputs);
+    payload.put("oldOutputs", oldOutputs);
+    payload.put("input", input);
 
     var request =
         HttpRequest.newBuilder(URI.create(url))
@@ -40,12 +46,13 @@ public class URLInput {
     System.out.println(String.format("Making inference request to: %s", url));
     var response = client.send(request, BodyHandlers.ofString());
     System.out.println(String.format("Response Status: %s", response.statusCode()));
-    System.out.println(String.format("Response Body: \n%s", new JSONObject(response.body()).toString(4)));
+    System.out.println(
+        String.format("Response Body: \n%s", new JSONObject(response.body()).toString(3)));
     assert 200 == response.statusCode();
   }
 
   public static void main(String[] args) throws Exception {
-    URLInput demo = new URLInput();
+    NLP demo = new NLP();
     demo.infer();
   }
 }
