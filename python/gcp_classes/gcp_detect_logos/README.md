@@ -1,3 +1,7 @@
+---
+title: "Sample code to run Google Detect Logos on Tiyaro"
+---
+
 # Sample code to run Google Detect Logos on Tiyaro
 
 

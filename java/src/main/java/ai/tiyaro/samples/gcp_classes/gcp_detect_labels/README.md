@@ -1,3 +1,7 @@
+---
+title: "Sample code to run Google Image Classification on Tiyaro"
+---
+
 # Sample code to run Google Image Classification (gcp_detect_labels) on Tiyaro
 
 ## Install and Run

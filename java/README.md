@@ -1,3 +1,7 @@
+---
+title: "Java Code samples for calling Tiyaro Inference API"
+---
+
 # Java Code samples for calling Tiyaro Inference API
 
 The samples are all self explanatory and are organized by the various ML **model types** [here](./src/main/java/ai/tiyaro/samples/).

@@ -1,3 +1,7 @@
+---
+title: "Sample code to run Rekognition Compare Faces on Tiyaro"
+---
+
 # Sample code to run Rekognition Compare Faces on Tiyaro
 
 

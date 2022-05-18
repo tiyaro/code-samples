@@ -1,3 +1,7 @@
+---
+title: "Sample code to run Google Color Detection on Tiyaro"
+---
+
 # Sample code to run Google Color Detection (gcp_detect_properties) on Tiyaro
 
 ## Install and Run

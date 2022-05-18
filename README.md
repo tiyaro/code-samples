@@ -1,3 +1,7 @@
+---
+title: "Code samples for calling Tiyaro API "
+---
+
 # Code samples for calling Tiyaro API 
 This repository includes full working samples for invoking the inference APIs supported by Tiyaro in multiple languages. The samples are all self explanatory and are organized by the various ML **model types**.
 
